@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOJA CARROS TRILHA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+
+    <main class="container">
+<header>
+        <h1>LOJA CARROS TRILHA</h1>
+        <p>Seu próximo carro começa aqui!</p>
+        <p>Simulador de compras — Desafio Trilhas 3 FAPEMA.</p>
+</header>
+
+        <div>
+        <section>
+            <h2>Confira os carros da nossa loja</h2>
+            <p>Preços por unidade:</p>
+
+            <table class="tabela-carros">
+    <thead>
+        <tr>
+            <th scope="col">Produto</th>
+            <th scope="col">Preço</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                <div class="produto">
+                    <img src="assets/fiatuno.webp" alt="Fiat Uno">
+
+                    <div>
+                        <strong>Fiat Uno</strong>
+                        <p>Compacto e econômico para o dia a dia.</p>
+                    </div>
+                </div>
+            </td>
+            <td class="preco">R$ 25.000,00</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="produto">
+                    <img src="assets/Onix.jpeg" alt="Chevrolet Onix">
+
+                    <div>
+                        <strong>Chevrolet Onix</strong>
+                        <p>Conforto e praticidade para suas viagens.</p>
+                    </div>
+                </div>
+            </td>
+            <td class="preco">R$ 65.000,00</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="produto">
+                    <img src="assets/Corolla.jpg" alt="Toyota Corolla">
+
+                    <div>
+                        <strong>Toyota Corolla</strong>
+                        <p>Espaço e conforto para toda a família.</p>
+                    </div>
+                </div>
+            </td>
+            <td class="preco">R$ 120.000,00</td>
+        </tr>
+    </tbody>
+</table>
+        </section>
+
+        <section>
+            <h2>Como simular uma compra</h2>
+
+            <ol>
+                <li>Clique no botão “Simular compra”.</li>
+                <li>Informe a quantidade desejada de cada carro.</li>
+                <li>Digite 0 para os carros que não deseja comprar.</li>
+                <li>Confira o resumo e o valor total da compra.</li>
+            </ol>
+
+            <button type="button" onclick="simularCompra()">
+                Simular compra
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por João Carlos dos Santos Almeida.</p>
+    </footer>
+</body>
+</html>

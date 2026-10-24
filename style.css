@@ -1,0 +1,149 @@
+/* Inclui bordas e espaçamentos no tamanho dos elementos */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+/* Centraliza o conteúdo e limita sua largura */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #bcc9c2;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    
+}
+
+h1 {
+    color: #414d66;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 4px 0;
+    color: #666;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Tabela de produtos */
+.tabela-carros {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.tabela-carros th,
+.tabela-carros td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabela-carros th {
+    background-color: #458dcf;
+}
+
+/* Imagem e descrição lado a lado */
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.produto img {
+    width: 100px;
+    height: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.produto p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.preco {
+    white-space: nowrap;
+}
+
+ol {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Botão da simulação */
+button {
+    background-color: #383c64;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #68b6ce;
+    border-radius: 10px;
+}
+
+/* Rodapé alinhado com o conteúdo */
+footer {
+    max-width: 850px;
+    margin: 30px auto 0;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .tabela-carros th,
+    .tabela-carros td {
+        padding: 8px;
+    }
+
+    .produto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .produto img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .preco {
+        font-size: 13px;
+    }
+}
